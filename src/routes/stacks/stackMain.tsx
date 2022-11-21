@@ -6,9 +6,9 @@ import Login from "../../screens/login";
 
 const Stack = createNativeStackNavigator();
 
-export default function StackMain() {
+export default function StackMain(){
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='Login' screenOptions={{headerShown: false}}>
             <Stack.Screen name="Login" component={Login} />
         </Stack.Navigator>
     )
